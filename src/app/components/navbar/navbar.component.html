@@ -1,0 +1,13 @@
+<mat-toolbar class="mat-toolbar__header" color="primary">
+    <div *ngIf="onDashBoardPage; else onDetailPage" class="mat-toolbar__items">
+        <a href="https://pokeapi.co/" target="_blank" #link>
+            <img class="mat-toolbar__items-logo" [src]="CONST.LOGO_IMAGE" />
+        </a>
+        <span class="mat-toolbar__items-title">{{CONST.NAVBAR_TITLE}}</span>
+    </div>
+    <ng-template class="mat-toolbar__items" #onDetailPage>
+        <button mat-mini-fab class="mat-toolbar__items-back-button" (click)="goBack()">
+            <mat-icon>arrow_back</mat-icon>
+        </button>
+    </ng-template>
+</mat-toolbar>

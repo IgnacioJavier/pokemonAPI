@@ -1,0 +1,10 @@
+<div *ngIf="pokemonList.length != 0; else noResponseYet">
+    <div fxLayoutAlign="center" fxLayoutGap="25px grid" fxLayout="row wrap" fxLayout.lt-md="column">
+        <div *ngFor="let pokemon of pokemonList" fxFlex="33.3">
+            <app-card-picture [pokeData]="pokemon"></app-card-picture>
+        </div>
+    </div>
+</div>
+<ng-template #noResponseYet>
+    <app-spinner></app-spinner>
+</ng-template>

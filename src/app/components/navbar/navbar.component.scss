@@ -1,0 +1,51 @@
+@media (max-width: 480px) {
+
+    .mat-toolbar__header {
+        font-size: large;
+        padding-right: 5px;
+    }
+
+}
+
+@media (min-width: 480px) {
+
+    .mat-toolbar__header {
+        font-size: x-large;
+    }
+
+}
+
+.mat-toolbar__header {
+    display: flex;
+    align-content: stretch;
+    padding: 25px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.mat-toolbar__items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.back-title {
+    margin-left: 15px;
+}
+
+.mat-toolbar__items-logo {
+    display: flex;
+    width: 50px;
+}
+
+.mat-toolbar__items-title {
+    margin-left: 15px;
+}
+
+.mat-toolbar__items-back-button {
+    background-color: #033A92;
+}
+
+

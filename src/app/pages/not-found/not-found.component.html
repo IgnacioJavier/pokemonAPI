@@ -1,0 +1,18 @@
+<div fxLayout="column" fxFlex="100">
+    <mat-card class="mat-card__not-found">
+
+        <mat-card-header class="mat-card-header__not-found">
+            <mat-card-title class="mat-card-header-text__not-found">{{CONST.ERROR}}</mat-card-title>
+        </mat-card-header>
+
+        <img mat-card-image [src]="CONST.IMAGE_404">
+
+        <mat-card-content class="mat-card-content__not-found">
+            <button mat-raised-button color="warn" (click)="goToHomePage()">
+                <span>{{CONST.ERROR_BACK}}</span>
+                <mat-icon>home</mat-icon>
+            </button>
+        </mat-card-content>
+
+    </mat-card>
+</div>
